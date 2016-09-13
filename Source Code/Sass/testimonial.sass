@@ -1,0 +1,69 @@
+.heading2
+  background-color: $dgrey
+  text:
+    align: center
+  color: white
+  h3
+    font:
+      size: 2em
+      family: $handel, sans-serif
+  p
+    font:
+      size: 1em
+      font-family: $nexal, serif
+.arrowbox
+  position: relative
+  margin: 0 auto
+  width: 40%
+  background-color: black
+  border: 5px solid $ytop
+  &:after, &:before
+    top: 100%
+    left: 50%
+    border: solid transparent
+    content: " "
+    height: 0
+    width: 0
+    position: absolute
+    pointer-events: none
+  &:after
+    border-color: rgba(44, 44, 44, 0)
+    border-top-color: black
+    border-width: 35px
+    margin-left: -35px
+  &:before
+    border-color: rgba(255, 153, 0, 0)
+    border-top-color: $ytop
+    border-width: 42px
+    margin-left: -42px
+
+.videowrapper
+  position: relative
+  padding-bottom: 56.25%
+  padding-top: 25px
+  height: 0
+  iframe
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+.quote
+  float: right
+  max-width: 30%
+  margin-right: 30%
+  //border-bottom: 1px solid #ccc
+  text:
+    align: center
+    color: #ccc
+    size: 0.4em
+    family: $nexal,serif
+.quotebox
+  img
+    margin-left: 25%
+    display: inline
+  //  border-bottom: 1px solid #ccc
+.quotename
+  text:
+    size:1.8em
+    font-family: $nexab,serif

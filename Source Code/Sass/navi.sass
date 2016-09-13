@@ -1,0 +1,95 @@
+.header
+  background-color: $dgrey
+  position: relative
+  width: 100%
+  height: 100px
+  font-family: $nexal , sans-serif
+
+.ddb
+  @media screen and (min-width: $desk)
+    width: 100%
+.ddi
+  display: none
+.dd
+  display: none
+
+  @media screen and (min-width: $desk)
+    display: inline
+    list-style: none
+
+ul.dd
+  @media screen and (min-width: $desk)
+    float: right
+    white-space: nowrap
+    margin-right: 10px
+    li
+      height: 50px
+      line-height: 50px
+      text-align: center
+      display: inline
+
+    a
+      text-decoration: none
+      height: 100%
+      margin-top: 50px
+      padding-left: 12px
+      padding-right: 12px
+      display: inline-block
+      color: #fff
+      &:active, &:hover
+        background-color: $ytop
+
+.ddi:checked + .ddb .dd
+  margin-top: 100px
+  position: absolute
+  display: block
+  background-color: $lgrey
+  color: #fff
+  width: 100%
+  padding-top: 1px
+  ul
+    text-decoration: none
+    margin-left: 4em
+  li
+    text-align: center
+    text-decoration: none
+    border-bottom: solid 2px $dgrey
+    padding-top: 5px
+    padding-bottom: 5px
+  a
+    text-decoration: none
+    display: block
+    width: 100%
+
+    &:default, &:visited
+      color: $ytop
+
+    &:active, &:hover
+      color: $ybottom
+      background: $dgrey
+
+  @media screen and (min-width: $desk)
+    display: none
+#mb
+  float: right
+  margin-right: 0
+  text-align: center
+  font-size: 60px
+  padding-top: 0
+  margin-top: 0
+  line-height: 100px
+  color: $ytop
+  height: 100px
+  width: 100px
+  &:hover
+    cursor: pointer
+    background-color: $ytop
+    color: #fff
+  @media screen and (min-width: $desk)
+    display: none
+#mainlogo
+  display: inline
+  float: left
+  margin-left: 2em
+  padding-top: 10px
+  max-height: 80px

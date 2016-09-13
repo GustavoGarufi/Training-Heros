@@ -1,0 +1,192 @@
+//output:html/index.html
+doctype html
+html(lang="en")
+  head
+    title Training Hero
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", type="text/css", charset="utf-8", href="../css/master.css")
+    link(rel="stylesheet", type="text/css", charset="utf-8", href="../fonts/stylesheet.css")
+    //link(rel="stylesheet", type="text/css", charset="utf-8", href="../fonts/specimen_files/specimen_stylesheet.css")
+  body
+    .container
+      .header
+        header
+          nav
+            //ddi= dropdowninput; ddb1=dropdownbox1 ; ddb=dropdownbox; dd=dropdown; mb=menubars
+            input(type="checkbox", id="ddb1",class="ddi")
+            div(class="ddb")
+              label(for="ddb1", id="mb") ☰
+              ul(class="dd")
+                a(href="#home")
+                  li Home
+                a(href="#testimonials")
+                  li Testimonials
+                a(href="#coach")
+                  li Coach
+                a(href="#nutrition")
+                  li Nutrition
+                a(href="#community")
+                  li Community
+                a(href="#joinNow", class="joinNow")
+                  li Join Now
+          img(src="../images/logowhite.svg", alt="Main logo for training heros", id="mainlogo")
+      article
+        div(class="heroback", id="home")
+          .headline
+            .headlinestyle
+              h1 Entdecke den Helden in Dir! Stefan Kretzschmar macht Dich fit!
+              p Dein individueller Trainings- und Ernährungsplan. Workouts und Übungen angepasst an Dein Fitnesslevel.
+              a(href="#joinNow", class="joinNow") Join the Training Heros
+          .splash
+        section.content
+          br
+          ul.rig.columns-2 
+            li
+              img(src="../images/stock3.jpeg", alt="Überall trainieren")
+              h3 Überall trainieren
+              p Draußen, zu Hause oder im Urlaub: Du brauchst keine Gewichte oder Geräte, nur dein Körpergewicht.
+            li
+              img(src="../images/stock1.jpeg", alt="Langfristige Erfolge")
+              h3 Langfristige Erfolge
+              p Kurze Workouts statt langer Trainingseinheiten. Eine nachgewiesene erfolgreiche Methode, um dauerhafte und sichtbare Ergebnisse zu erzielen.
+            li
+              img(src="../images/stock4.jpeg", alt="Auf Dich abgestimmt")
+              h3 Auf Dich abgestimmt
+              p Anfänger oder Fortgeschrittener: wir liefern dir den richtigen Plan für dein Fitnesslevel.
+            li
+              img(src="../images/stock7.jpg", alt="Gesund ernähren ohne zu Hungern")
+              h3 Gesund ernähren ohne zu Hungern
+              p infache und alltagstaugliche Ernährung. Auch für Veganer geeignet.
+          br
+          div(id="testimonials")
+            .heading2
+              br
+              h3 Erfolg ist was Du draus machst
+              p Starte jetzt kostenlos: Stefan Ketzschmar und die Training Heroes zeigen Dir, wie Du zum Helden wirst!
+              br
+              .arrowbox
+                .videowrapper
+                  iframe(width="420", height="315", src="https://www.youtube.com/embed/dQw4w9WgXcQ", frameborder="0", allowfullscreen)
+              br
+              br
+              .quotebox
+                img(src="../images/rick.jpg", alt="Rick Astley!", class="rounded")
+                p(class="quote") "Debitis platonem te eos, no utamur vulputate mea. Vel ferri reprimique delicatissimi eu. Pro mutat vidisse at, an nullam repudiandae sea, est aeterno erroribus an. Ius facer nonumes id, id fugit dicta vix, vis in omnesque intellegat."
+                br 
+                br
+              h3(class="quotename") Rick Astley
+              br
+              br
+          div(id="coach")
+            div(id="coachstyle", class="heroback")
+              br
+              br
+              h1(class="heading3 strokeme") Meet Your New Personal Coach:
+              br
+              br
+              ul.rig2.columns-3
+                li
+                  img(src="../images/stock6.jpg", alt="Langfristige Erfolge")
+                  h3 Helden Workouts und vorgegebene Trainingspläne
+                  p Mit deinem wöchentlichen Trainings- und Ernährungsplan, steigerst du dein Fitnesslevel ganz in deinem Tempo. Warmup, Workout, Stretching und Ernährung: Das komplette Paket für dich.
+                li
+                  img(src="../images/stock5.jpg", alt="Auf Dich abgestimmt")
+                  h3 Langfristige Erfolge
+                  p Kein Schnellschuss! Die beste Kombination aus Workouts und Ernährung, um langfristig in Heldenform zu kommen. Jeder Bereich der körperlichen Muskulatur wird gezielt angesprochen. Dein Ziel ist Gesetzt: Egal ob muskulöser, schlanker, gesünder, Training Heroes wird dir helfen, es zu erreichen.
+                li
+                  img(src="../images/stock9.jpg", alt="Überall trainieren")
+                  h3 Training Heroes Coaching Programm
+                  p Erreiche deine Ziele in deinem Tempo und genau auf dich abgestimmt                  
+          br
+          div(id="nutrition")
+            .clear
+              .nutbox
+                .rig3
+                  h3(class="centerme") Ernährungskonzept
+                  img(src="../images/stock8.jpg", alt="Überall trainieren")
+                  p Weil ein Held beide Seiten der Medaille kennt. Erfahre alles über gesunde Ernährung und die Grundbausteine, wie du deinen Trainingserfolg maximierst. Egal ob Veganer oder Fleischliebhaber, 
+                  p(class="centerme") Training Heroes passt sich deinen Vorlieben an.
+              .nutbulletsdiv
+                ul.nutbullets
+                  li
+                    img(src="../images/nuticon1.svg", alt="Measuring Weist", class="rounded")
+                    p Wenig Regeln, viel Wissen
+                  li
+                    img(src="../images/nuticon2.svg", alt="Healthy Diet", class="rounded")
+                    p Veganer, Vegetarier, Allesesser – für jeden geeignet
+                  li
+                    img(src="../images/nuticon3.svg", alt="Fast Results", class="rounded")
+                    p Einfache, schnelle, wöchentliche Rezepte
+          div(id="community")
+            .clear
+              div(id="combg", class="heroback")
+                h1(class="heading3 strokeme") Die Community
+                p(class="content3") Sei Teil der Helden Bewegung. Battle dich mit Freunden, tausche dich mit Gleichgesinnten aus. Andere Training Heroes stehen Dir bei jedem Schritt zur Seite.
+                br
+                ul(class="rig4 columns-3", id="com")                
+                  li
+                    img(src="../images/com2.svg", alt="Lass dich motivieren und antreiben")
+                    p Lass dich motivieren und antreiben: Werde zum Helden der Community
+                  li
+                    img(src="../images/com1.svg", alt="Du bist nicht allein")
+                    p Du bist nicht allein: Tausche dich mit anderen aus
+                  li
+                    img(src="../images/com3.svg", alt="Vernetzte dich mit der Community")
+                    p Vernetzte dich mit der Community: Folgen, Chatten, Posten, Motivieren                 
+          div(id="joinNow")
+            .heading2
+              h3(class="joinhead") Entscheide Dich jetzt
+              p 
+                em Dein Training mit Stefan Kretzschmar. Erprobte Workouts. Langfristige Erfolge. Individuell auf dein Fitnesslevel abgestimmt.
+              br
+              .facebookbtn
+                a(href="http://www.facebook.com/", target="_blank") Register with facebook
+              br  
+              p or
+              br
+              .realjoin
+                a(href="#") Register with an email adress
+              br
+              p(id="terms")
+                | Mit meiner Registrierung stimme ich den 
+                a(href="#") AGB 
+                | und den 
+                a(href="#") Datenschutzrichtlinien 
+                | von Training Heroes zu.
+              br
+              br    
+      footer.clear
+        ul.masterfooter
+          li.footnav
+            strong Social:
+            ul.foot1
+              li: a(href="www.Facebook.com/", target="_blank") Facebook
+              li: a(href="http://www.twitter.com", target="_blank") Twitter
+              li: a(href="http://www.google.com", target="_blank") Google+
+              li: a(href="http://www.Instagram.com", target="_blank") Instagram
+              li: a(href="http://www.Youtube.com", target="_blank") Youtube
+          li.footnav
+            strong Rechtliches:
+            ul.foot2
+              li: a(href="#") AGB
+              li: a(href="#") Datenschutz
+              li: a(href="#") Impressum
+            
+          li.footnav
+            strong Support:
+            ul.foot1
+              li: a(href="#") Hilfe
+              li: a(href="#") Support
+              li: a(href="#") Grundlagen
+            
+          li.footnav
+            strong Über:
+            ul.foot2
+              li: a(href="#") Stefan Kretzschmar
+              li: a(href="#") Training Coach
+              li: a(href="#") Ernährung
+        br
+        p(id="terms" class="centerme") Training Heros 2015&copy;       
+    script(src="../js/jquery-2.1.3.min.js")
+    script(type="text/javascript", src="../js/scripts.js")

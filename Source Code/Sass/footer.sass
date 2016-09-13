@@ -1,0 +1,53 @@
+footer
+  background:
+    image: url(../images/bg.png)
+  color: $dgrey
+  padding: 20px 0
+  position: fixed
+  bottom: 0
+  //margin: 0 auto
+  width: 1300px
+  z-index: -1
+  height: 250px
+
+  ul.masterfooter
+    width: 90%
+    margin: 0 auto
+    overflow: hidden
+    text-align: center
+    display: flex
+    strong
+      font:
+        size: 2.8em
+        family: $nexab, sans-serif
+      color: black
+      align-items: flex-start
+    a
+      color: $lgrey
+      font:
+        family: $nexal, sans-serif
+        size: 1em
+      text-decoration: none
+      &:hover
+        color: $ytop
+    li.footnav
+      display: inline-block
+      width: 24%
+      ul.foot1
+        width: 100%
+        li
+          padding-top: 10px
+          display: block
+      ul.foot2
+        width: 100%
+        li
+          padding-top: 10px
+          display: block
+
+  a:default, a:visited
+    color: $lgrey
+  &:hover, &:active
+    color: $dgrey
+
+  input
+    color: #666
